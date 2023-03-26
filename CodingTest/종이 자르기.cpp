@@ -5,12 +5,7 @@ using namespace std;
 
 int solution(int M, int N)
 {
-	int answer = 0;
-
-	int big = (M > N) ? M : N;
-	int small = (M <= N) ? M : N;
-
-	answer = (big - 1) * small + (small - 1);
+	int answer = ((M * N) - 1);
 
 	return answer;
 }
