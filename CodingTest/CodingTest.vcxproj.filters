@@ -16,5 +16,13 @@
     <Filter Include="소스 파일\프로그래머스">
       <UniqueIdentifier>{ceeeae77-6486-40e9-a51a-54d3647e1e3d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\프로그래머스\Lv.0">
+      <UniqueIdentifier>{65371b28-258f-4ec1-b5ec-d7d20c7f445c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="다음에 올 숫자.cpp">
+      <Filter>소스 파일\프로그래머스\Lv.0</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
