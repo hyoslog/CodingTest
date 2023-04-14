@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\프로그래머스\Lv.0">
       <UniqueIdentifier>{65371b28-258f-4ec1-b5ec-d7d20c7f445c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\프로그래머스\Lv.1">
+      <UniqueIdentifier>{a891b23e-184e-4d11-8947-10b791ac3a23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="다음에 올 숫자.cpp">
@@ -29,6 +32,9 @@
     </ClCompile>
     <ClCompile Include="종이 자르기.cpp">
       <Filter>소스 파일\프로그래머스\Lv.0</Filter>
+    </ClCompile>
+    <ClCompile Include="덧칠하기.cpp">
+      <Filter>소스 파일\프로그래머스\Lv.1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
