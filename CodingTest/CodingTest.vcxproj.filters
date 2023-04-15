@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\프로그래머스\Lv.2">
       <UniqueIdentifier>{4acc4803-fb62-4b4c-9b35-5bf24e49a658}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\프로그래머스\Lv.3">
+      <UniqueIdentifier>{b25bdc41-3df1-4f24-b427-ea2a9b9fc56f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="다음에 올 숫자.cpp">
@@ -41,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="타겟넘버.cpp">
       <Filter>소스 파일\프로그래머스\Lv.2</Filter>
+    </ClCompile>
+    <ClCompile Include="네트워크.cpp">
+      <Filter>소스 파일\프로그래머스\Lv.3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
