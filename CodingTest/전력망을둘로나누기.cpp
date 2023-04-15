@@ -61,7 +61,7 @@ int solution(int n, vector<vector<int>> wires)
         if (diff == 0)
         {
             answer = 0;
-            break;
+            return answer;
         }
 
         answerDatas.emplace(diff);
@@ -73,7 +73,7 @@ int solution(int n, vector<vector<int>> wires)
 
 int main()
 {
-    vector<vector<int>> inputs = {{1, 2}, {2, 3}, {3, 4}};
+    vector<vector<int>> inputs = { {1, 2}, {2, 3}, {3, 4}, {1, 4} };
     
     int result = solution(4, inputs);
 
