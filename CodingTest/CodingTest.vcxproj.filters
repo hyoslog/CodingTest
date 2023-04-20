@@ -51,5 +51,8 @@
     <ClCompile Include="전력망을둘로나누기.cpp">
       <Filter>소스 파일\프로그래머스\Lv.2</Filter>
     </ClCompile>
+    <ClCompile Include="정수삼각형.cpp">
+      <Filter>소스 파일\프로그래머스\Lv.3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
