@@ -3,45 +3,44 @@
 
 using namespace std;
 
-vector<bool> g_bVisited;
-vector<vector<int>> g_Graph;
-
-void DFS(const vector<vector<int>>& computers)
+void DFS(const int n, const vector<vector<int>>& computers, vector<bool>& outVisited, vector<int>& outConnected, const int vertex)
 {
+	outVisited[vertex] = true;
+	outConnected.emplace_back(vertex);
 
+	for (int connectedVertex = 0; connectedVertex < n; ++connectedVertex)
+	{
+		if ((outVisited[connectedVertex] == false) && (computers[vertex][connectedVertex] == 1))
+		{
+			DFS(n, computers, outVisited, outConnected, connectedVertex);
+		}		
+	}
 }
 
 int solution(int n, vector<vector<int>> computers)
 {
-	g_bVisited.resize(n, false);
-	g_Graph.resize(n);
+	vector<bool> visited;
+	visited.resize(n, false);
 
-	// 서로 연결되어있는 정보 
-	for (int i = 0; i < n; ++i)
+	int answer = 0;
+
+	for (int vertex = 0; vertex < n; ++vertex)
 	{
-		for (int j = 0; j < n; ++j)
+		if (visited[vertex] == false)
 		{
-			if (i == j)
-			{
-				continue;
-			}
+			vector<int> connected;
+			DFS(n, computers, visited, connected, vertex);
 
-			if (computers[i][j] == 1)
+			if (connected.empty() == false)
 			{
-				g_Graph[i].emplace_back(j);
+				++answer;
 			}
 		}
 	}
 
-
-	int answer = 0;
-
-	for (int i = 0; i < n; ++i)
-	{
-	}
-
 	return answer;
 }
+
 int main()
 {
     vector<vector<int>> inputs;
